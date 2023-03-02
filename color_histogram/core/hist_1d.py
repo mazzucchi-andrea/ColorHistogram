@@ -97,7 +97,7 @@ class Hist1D:
 
         hist_positive = self._hist_bins > 0.0
 
-        for ci in xrange(3):
+        for ci in range(3):
             color_bins[hist_positive, ci] /= self._hist_bins[hist_positive]
 
         self._color_bins = color_bins
